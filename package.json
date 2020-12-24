@@ -1,5 +1,5 @@
 {
-  "name": "@asinns/deep-clone",
+  "name": "@asins/deep-clone",
   "version": "1.0.0",
   "description": "对象尝试拷贝",
   "main": "index.ts",
