@@ -1,7 +1,7 @@
 {
   "name": "@asins/deep-clone",
   "version": "1.0.0",
-  "description": "对象尝试拷贝",
+  "description": "对象深度拷贝",
   "main": "index.ts",
   "dependencies": {
   },
