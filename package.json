@@ -1,5 +1,5 @@
 {
-  "name": "@ali/deepclone",
+  "name": "@asins/deep-clone",
   "version": "1.0.1",
   "description": "对象深度拷贝",
   "main": "dist/index.cjs.js",
@@ -26,9 +26,6 @@
     "deepclone",
     "TypeScript"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npm.alibaba-inc.com"
-  },
   "author": "asins",
   "license": "ISC"
 }
