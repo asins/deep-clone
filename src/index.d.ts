@@ -1,3 +1,1 @@
-declare function deepclone(obj: T): <T>(input: T) => T;
-
-export = deepclone;
+export default function deepclone<T>(input: T): T;
