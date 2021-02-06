@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "对象深度拷贝",
   "main": "dist/index.cjs.js",
-  "module": "dist/index.ejs.js",
+  "module": "dist/index.esm.js",
   "typings": "src/index.d.ts",
   "dependencies": {},
   "devDependencies": {
