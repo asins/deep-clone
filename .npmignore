@@ -1,7 +1,13 @@
 jsconfig.json
 .babelrc
 .gitignore
+.eslintrc
 .vscode/
 .tea/
 package-lock.json
+pnpm-lock.yaml
 node_modules
+src/
+rollup.config.json
+tsconfig.json
+node_modules/
