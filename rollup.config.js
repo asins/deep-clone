@@ -34,8 +34,7 @@ export default [
   {
     input: './src/index.ts',
     output: [
-      { file: './dist/index.js', format: 'umd', name: 'deepClone' },
-      { file: './dist/index.cjs.js', format: 'cjs', exports: 'auto' },
+      { file: './dist/index.js', format: 'cjs', exports: 'named' },
       { file: './dist/index.esm.js', format: 'es' },
     ],
     plugins: [

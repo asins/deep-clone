@@ -4,7 +4,7 @@
   "description": "对象深度拷贝",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "typings": "src/index.d.ts",
+  "typings": "dist/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.11.0",
