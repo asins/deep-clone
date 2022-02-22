@@ -4,6 +4,8 @@
     "sourceMap": true,
     "allowJs": false,
     "target": "ES6",
+    // Generate d.ts files
+    "declaration": true,
     "lib": [
       "DOM",
       "ES6",
