@@ -1,6 +1,6 @@
 {
   "name": "@asins/deep-clone",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "对象深度拷贝",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
