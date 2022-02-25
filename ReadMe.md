@@ -4,6 +4,27 @@
  附加支持：Date (复制) undefined (复制)
  入参 {Object|Array} o 待深度复制的对象
 
+## Types
+
+clones all JSON types:
+- Object
+- Array
+- Number
+- String
+- null
+
+With additional support for:
+- Date (copied)
+- undefined (copied)
+- Buffer (copied)
+- TypedArray (copied)
+- Map (copied)
+- Set (copied)
+- Function (referenced)
+- AsyncFunction (referenced)
+- GeneratorFunction (referenced)
+- arguments (copied to a normal object)
+
 ## 构建最终产物
 
 执行以下命令安装构建前的依赖
@@ -34,6 +55,16 @@ const newObj = deepClone(obj);
 console.log(newObj.arr === obj.arr); // false
 obj.obj2.str2 = 'string2 changed';
 console.log(newObj.obj2.str2); // This is a string2.
+```
+
+## 性能测试
+
+```bash
+> npm run bench
+benchDeepClone*100: 488.153ms // 首次执行
+benchJsonParseJsonStringify*100: 2.155s
+benchDeepClone*100: 427.873ms // 快速二次执行
+benchJsonParseJsonStringify*100: 2.115s
 ```
 
 ## 声明
