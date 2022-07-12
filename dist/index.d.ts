@@ -4,4 +4,4 @@
  * 附加支持：Date (复制) undefined (复制)
  * @param {Object|Array} o 待深度复制的对象
  */
-export default function clone(o: any): any;
+export default function clone<T>(o: T): Partial<T>;
