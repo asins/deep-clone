@@ -5,7 +5,7 @@
  * @param {Object|Array} o 待深度复制的对象
  */
 
-export default function clone<T>(o: T): Partial<T> {
+export default function clone<T>(o: T): T {
   if (typeof o !== 'object' || o === null) return o;
   // @ts-ignore Date类型转为T类型
   if (o instanceof Date) return new Date(o);
@@ -20,7 +20,7 @@ export default function clone<T>(o: T): Partial<T> {
     return a2;
   }
 
-  const o2 = {};
+  const o2 = {} as T;
   for (const k in o) {
     if (Object.hasOwnProperty.call(o, k) === false) continue;
     // @ts-ignore Object类型转为T类型
