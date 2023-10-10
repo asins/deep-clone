@@ -21,12 +21,11 @@
     "noImplicitThis": true,
     "noImplicitAny": false,
     "strictNullChecks": false,
-    "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
     "alwaysStrict": true,
     "preserveConstEnums": true,
-    "downlevelIteration": true,
+    "downlevelIteration": true
   },
   "include": [ "**/*.ts" ],
   "exclude": ["node_modules"]
