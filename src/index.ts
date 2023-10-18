@@ -12,7 +12,7 @@ export default function clone<T>(o: T): T {
   else if (o instanceof Map) res = new Map(cloneArray(Array.from(o), clone)) as unknown as T
   else if (o instanceof Set) res = new Set(cloneArray(Array.from(o), clone)) as unknown as T
   else if (ArrayBuffer.isView(o)) res = (o as unknown as Uint8Array).slice(0) as unknown as T;
-  else if (o instanceof Element) res = o;
+  else if (typeof Element !== "undefined" && o instanceof Element) res = o;
   else {
     res = {} as T;
     for (var k in o) {

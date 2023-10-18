@@ -22,7 +22,7 @@ function clone(o) {
         res = new Set(cloneArray(Array.from(o), clone));
     else if (ArrayBuffer.isView(o))
         res = o.slice(0);
-    else if (o instanceof Element)
+    else if (typeof Element !== "undefined" && o instanceof Element)
         res = o;
     else {
         res = {};
